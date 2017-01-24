@@ -1,0 +1,5 @@
+@lost gutter 40px;
+
+.div {
+  lost-column: 1/3;
+}

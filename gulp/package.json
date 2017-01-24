@@ -1,0 +1,11 @@
+{
+  "name": "lostgrid-scss",
+  "description": "An example project for using LostGrid with Gulp",
+  "author": "Peter Ramsing <hi@peterramsing.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "lost": "^8.0.0"
+  }
+}
