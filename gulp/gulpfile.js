@@ -9,8 +9,8 @@ gulp.task('styles', () => {
       lostgrid()
     ]))
     .pipe(gulp.dest('build'));
-});
+})
 
 gulp.task('default', () => {
-  gulp.start('styles');
-});
+  gulp.start('styles')
+})

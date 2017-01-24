@@ -1,9 +1,9 @@
-const gulp = require('gulp');
+const gulp = require('gulp')
 
-const postcss = require('gulp-postcss');
-const lostgrid = require('lost');
+const postcss = require('gulp-postcss')
+const lostgrid = require('lost')
 
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')
 
 gulp.task('styles', () => {
   gulp.src('source/main.scss')
@@ -13,9 +13,9 @@ gulp.task('styles', () => {
     .pipe(postcss([
       lostgrid()
     ]))
-    .pipe(gulp.dest('build'));
-});
+    .pipe(gulp.dest('build'))
+})
 
 gulp.task('default', () => {
-  gulp.start('styles');
-});
+  gulp.start('styles')
+})
