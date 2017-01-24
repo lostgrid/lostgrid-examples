@@ -1,5 +1,5 @@
 {
-  "name": "lostgrid-scss",
+  "name": "lostgrid-gulp-scss",
   "description": "An example project for using LostGrid with Gulp and SCSS",
   "author": "Peter Ramsing <hi@peterramsing.com>",
   "license": "MIT",
