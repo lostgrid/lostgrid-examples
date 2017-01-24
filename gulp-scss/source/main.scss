@@ -1,0 +1,8 @@
+$gutter: 40px;
+
+// Use SCSS variables wherever you want by escaping them like this.
+@lost gutter #{$gutter};
+
+.div {
+  lost-column: 1/3;
+}
