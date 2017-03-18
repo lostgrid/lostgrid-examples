@@ -48,3 +48,137 @@ html {
         lost-column: 1/6;
     }
 }
+
+.OffsetSection__grid {
+    background: #66b3ba;
+}
+
+.OffsetSection__grid div {
+    background: #52a9b1;
+    lost-column: 1/3;
+}
+
+.OffsetSection__grid div:first-child {
+    lost-offset: 1/3;
+}
+
+@media (max-width: 800px) {
+    .OffsetSection__grid div:first-child {
+        lost-offset: clear-left;
+    }
+}
+
+.NestingSection__grid {
+    background: #8eb19d;
+}
+
+.NestingSection__grid div {
+    background: #7ba48d;
+    lost-column: 1/3;
+}
+
+.NestingSection__grid div div {
+    background: #68977c;
+    lost-column: 1/2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.AlignmentSection__grid {
+    background: #f0d2d1;
+    height: 300px;
+    lost-align: center;
+}
+
+.AlignmentSection__grid div {
+    background: #e5b1af;
+    lost-column: 1/3;
+}
+
+.CycleSection__grid {
+    background: #f19a3e;
+}
+
+.CycleSection__grid div {
+    background: #ef8b22;
+    height: auto;
+    padding: 15px;
+    line-height: 25px;
+    font-weight: normal;
+    lost-column: 1/1;
+}
+
+@media (min-width: 500px) {
+    .CycleSection__grid div {
+        lost-column: 2/4 2;
+    }
+}
+
+@media (min-width: 800px) {
+    .CycleSection__grid div {
+        lost-column: 2/6 3;
+    }
+}
+
+@media (min-width: 1100px) {
+    .CycleSection__grid div {
+        lost-column: 2/8 4;
+    }
+}
+
+.VerticalGridSection__grid {
+    background: #1e90ff;
+}
+
+.VerticalGridSection__grid div {
+    background: #0182ff;
+    margin-top: 0;
+    padding: 30px;
+    lost-row: 1/3;
+}
+
+.WaffleGridSection__grid {
+    background: #ff6347;
+}
+
+.WaffleGridSection__grid div {
+    background: #ff4726;
+    margin-top: 0;
+    padding: 30px;
+    lost-waffle: 1/3;
+}
+
+.VaryingSizesSection__grid {
+    background: #00ff7f;
+}
+
+.VaryingSizesSection__grid div {
+    background: #00e672;
+}
+
+.VaryingSizesSection__grid div:first-child {
+    lost-column: 1/3;
+}
+
+.VaryingSizesSection__grid div:last-child {
+    lost-column: 2/3;
+}
+
+.SourceOrderingSection__grid {
+    background: #5f9ea0;
+}
+
+.SourceOrderingSection__grid div {
+    background: #568e90;
+    lost-column: 1/2;
+}
+
+@media (min-width: 800px) {
+    .SourceOrderingSection__grid div:first-child {
+        lost-move: 1/2;
+    }
+
+    .SourceOrderingSection__grid div:last-child {
+        lost-move: -1/2;
+    }
+}

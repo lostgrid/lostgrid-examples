@@ -17,23 +17,23 @@
 <!-- Responsive Blocks -->
 <section class="ColumnSection u-clearfix">
     <div class="ColumnSection__description u-clearfix">
-        <h1>Typical Grid Structure</h1>
+        <h1>Simple Grid Structure</h1>
 <pre><code class="language-css">
+.ColumnSection__grid div {
+    lost-column: 1/1;
+}
+
+@media (min-width: 400px) {
     .ColumnSection__grid div {
-        lost-column: 1/1;
+        lost-column: 1/3;
     }
+}
 
-    @media (min-width: 400px) {
-        .ColumnSection__grid div {
-            lost-column: 1/3;
-        }
+@media (min-width: 900px) {
+    .ColumnSection__grid div {
+        lost-column: 1/6;
     }
-
-    @media (min-width: 900px) {
-        .ColumnSection__grid div {
-            lost-column: 1/6;
-        }
-    }
+}
 </code></pre>
     </div>
 
@@ -46,3 +46,285 @@
         <div>6</div>
     </div>
 </section>
+
+
+
+<!-- Offset -->
+<section class="OffsetSection u-clearfix">
+    <div class="OffsetSection__description u-clearfix">
+        <h1>Using offsets</h1>
+<pre><code class="language-css">
+.OffsetSection__grid {
+    background: #66b3ba;
+}
+
+.OffsetSection__grid div {
+    background: #52a9b1;
+    lost-column: 1/3;
+}
+
+.OffsetSection__grid div:first-child {
+    lost-offset: 1/3;
+}
+
+@media (max-width: 800px) {
+    .OffsetSection__grid div:first-child {
+        lost-offset: clear-left;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="OffsetSection__grid u-clearfix">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</section>
+
+
+<!-- Nesting -->
+<section class="NestingSection u-clearfix">
+    <div class="NestingSection__description u-clearfix">
+        <h1>Nesting Grids</h1>
+        <pre><code class="language-css">
+.NestingSection__grid {
+    background: #8eb19d;
+}
+
+.NestingSection__grid div {
+    background: #7ba48d;
+    lost-column: 1/3;
+}
+
+.NestingSection__grid div div {
+    background: #68977c;
+    lost-column: 1/2;
+}
+</code></pre>
+    </div>
+
+    <div class="NestingSection__grid u-clearfix">
+        <div>a</div>
+        <div>a</div>
+        <div>
+            <div>b</div>
+            <div>b</div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Alignment -->
+<section class="AlignmentSection u-clearfix">
+    <div class="AlignmentSection__description u-clearfix">
+        <h1>Aligning Divs</h1>
+        <pre><code class="language-css">
+.AlignmentSection__grid {
+    background: #f0d2d1;
+    height: 300px;
+    lost-align: center;
+}
+
+.AlignmentSection__grid div {
+    background: #e5b1af;
+    lost-column: 1/3;
+}
+</code></pre>
+    </div>
+
+    <div class="AlignmentSection__grid u-clearfix">
+        <div>1</div>
+    </div>
+</section>
+
+
+<!-- Cycle -->
+<section class="CycleSection u-clearfix">
+    <div class="CycleSection__description u-clearfix">
+        <h1>The LostGrid Cycle</h1>
+        <pre><code class="language-css">
+.CycleSection__grid div {
+    background: #ef8b22;
+    height: auto;
+    padding: 15px;
+    line-height: 25px;
+    font-weight: normal;
+    lost-column: 1/1;
+}
+
+@media (min-width: 500px) {
+    .CycleSection__grid div {
+        lost-column: 2/4 2;
+    }
+}
+
+@media (min-width: 800px) {
+    .CycleSection__grid div {
+        lost-column: 2/6 3;
+    }
+}
+
+@media (min-width: 1100px) {
+    .CycleSection__grid div {
+        lost-column: 2/8 4;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="CycleSection__grid u-clearfix">
+        <div>
+            1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem rem nam dolore repellendus provident,
+            voluptas necessitatibus vel cupiditate delectus, doloremque incidunt accusantium quia! Nisi molestiae totam
+            natus, in assumenda accusantium.
+        </div>
+        <div>
+            2 - Lorem ipsum dolor sit amet.
+        </div>
+        <div>
+            3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt harum ut rerum id quae voluptas velit
+            iusto quasi distinctio.
+        </div>
+        <div>
+            4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sequi?
+        </div>
+        <div>
+            5 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi deserunt, dolorem accusamus sint ipsam
+            dolor quae ab animi assumenda architecto placeat possimus fugit doloribus vel, corporis amet aliquam maiores!
+        </div>
+        <div>
+            6 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+</section>
+
+
+<!-- Vertical Grid -->
+<section class="VerticalGridSection u-clearfix">
+    <div class="VerticalGridSection__description u-clearfix">
+        <h1>Vertical Grids</h1>
+        <pre><code class="language-css">
+.VerticalGridSection__grid {
+    background: #1e90ff;
+}
+
+.VerticalGridSection__grid div {
+    background: #0182ff;
+    margin-top: 0;
+    padding: 30px;
+    lost-row: 1/3;
+}
+</code></pre>
+    </div>
+
+    <div class="VerticalGridSection__grid u-clearfix">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</section>
+
+
+
+
+<!-- Waffle Grid -->
+<section class="WaffleGridSection u-clearfix">
+    <div class="WaffleGridSection__description u-clearfix">
+        <h1>Waffle Grids</h1>
+        <pre><code class="language-css">
+.WaffleGridSection__grid {
+    background: #ff6347;
+}
+
+.WaffleGridSection__grid div {
+    background: #ff4726;
+    margin-top: 0;
+    padding: 30px;
+    lost-waffle: 1/3;
+}
+</code></pre>
+    </div>
+
+    <div class="WaffleGridSection__grid u-clearfix">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+</section>
+
+<!-- Varying Sizes -->
+<section class="VaryingSizesSection u-clearfix">
+    <div class="VaryingSizesSection__description u-clearfix">
+        <h1>Varying Sizes</h1>
+        <pre><code class="language-css">
+VaryingSizesSection__grid {
+    background: #00ff7f;
+}
+
+VaryingSizesSection__grid div {
+    background: #00e672;
+}
+
+VaryingSizesSection__grid div:first-child {
+    lost-column: 1/3;
+}
+
+VaryingSizesSection__grid div:last-child {
+    lost-column: 2/3;
+}
+</code></pre>
+    </div>
+
+    <div class="VaryingSizesSection__grid u-clearfix">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</section>
+
+<!-- Source Ordering -->
+<section class="SourceOrderingSection u-clearfix">
+    <div class="SourceOrderingSection__description u-clearfix">
+        <h1>Source Ordering</h1>
+        <pre><code class="language-css">
+.SourceOrderingSection__grid {
+    background: #5f9ea0;
+}
+
+.SourceOrderingSection__grid div {
+    background: #568e90;
+    lost-column: 1/2;
+}
+
+@media (min-width: 800px) {
+    .SourceOrderingSection__grid div:first-child {
+        lost-move: 1/2;
+    }
+
+    .SourceOrderingSection__grid div:last-child {
+        lost-move: -1/2;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="SourceOrderingSection__grid u-clearfix">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</section>
+
+
+</body>
+</html>
