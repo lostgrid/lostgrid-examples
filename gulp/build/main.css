@@ -130,13 +130,6 @@ html {
     margin-left: calc(99.9% * (-1/3 * -1) - (30px - 30px * (-1/3 * -1)) + 30px) !important;
 }
 
-@media (max-width: 800px) {
-    .OffsetSection__grid div:first-child {
-        margin-left: 0 !important;
-        margin-right: 30px !important;
-    }
-}
-
 .NestingSection__grid {
     background: #8eb19d;
 }

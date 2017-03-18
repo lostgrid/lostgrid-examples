@@ -62,12 +62,6 @@ html {
     lost-offset: 1/3;
 }
 
-@media (max-width: 800px) {
-    .OffsetSection__grid div:first-child {
-        lost-offset: clear-left;
-    }
-}
-
 .NestingSection__grid {
     background: #8eb19d;
 }
