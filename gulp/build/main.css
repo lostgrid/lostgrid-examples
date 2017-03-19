@@ -3,6 +3,12 @@ html {
     height: auto;
 }
 
+body {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 [class*="__grid"] {
     max-width: 1140px;
     margin: 30px auto;

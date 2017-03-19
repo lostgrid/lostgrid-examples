@@ -12,13 +12,6 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/**
- * Remove default margin.
- */
-
-body {
-    margin: 0;
-}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -456,7 +449,6 @@ html {
     overflow-x: hidden;
 }
 body {
-    width: 100%;
     overflow-x: hidden;
 }
 img,
